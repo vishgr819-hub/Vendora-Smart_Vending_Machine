@@ -20,7 +20,14 @@ public class Transaction {
 
     private LocalDateTime timestamp;
 
+    // Overall purchase status
     private String status;
+
+    // Purchase recovery fields
+    private String paymentStatus;
+    private String dispensingStatus;
+    private String failureReason;
+    private String recoveryStatus;
 
     public Transaction() {
     }
@@ -96,5 +103,37 @@ public class Transaction {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getPaymentStatus() {
+        return paymentStatus;
+    }
+
+    public void setPaymentStatus(String paymentStatus) {
+        this.paymentStatus = paymentStatus;
+    }
+
+    public String getDispensingStatus() {
+        return dispensingStatus;
+    }
+
+    public void setDispensingStatus(String dispensingStatus) {
+        this.dispensingStatus = dispensingStatus;
+    }
+
+    public String getFailureReason() {
+        return failureReason;
+    }
+
+    public void setFailureReason(String failureReason) {
+        this.failureReason = failureReason;
+    }
+
+    public String getRecoveryStatus() {
+        return recoveryStatus;
+    }
+
+    public void setRecoveryStatus(String recoveryStatus) {
+        this.recoveryStatus = recoveryStatus;
     }
 }
